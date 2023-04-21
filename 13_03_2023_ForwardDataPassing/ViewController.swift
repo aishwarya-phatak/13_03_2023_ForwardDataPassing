@@ -14,11 +14,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
+    
     }
-    
-    
+
     @IBAction func btnClick(_ sender: Any) {
         secondViewController =    self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController
         secondViewController?.dataContainer = self.nameTextField.text
